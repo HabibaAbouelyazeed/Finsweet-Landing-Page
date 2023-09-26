@@ -583,8 +583,44 @@ body{
     margin-top: 1.75rem;
     align-self: center;
 }
-
 /* FAQ Section ==>END */
+/* Blog Section ==>START */
+.blog-section{
+    padding-bottom: 8rem;
+}
+.blog-section .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-items-container{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-top: 4rem;
+    gap: 2rem;
+}
+
+.blog__item{
+    width: 33.33%;
+    background-color: white;
+}
+
+.blog__body{
+    padding-top: 2.5rem;
+}
+
+.blog__body label{
+    font-weight: 500;
+    line-height: 1.75rem;
+    opacity: 0.7;
+    margin-bottom: 1rem;
+}
+
+.blog__body p{
+    margin: 1rem 0 2.87rem;
+}
+/* Blog Section ==>END */
 /* Main ==>START */
 
 
@@ -711,7 +747,23 @@ body{
         padding-bottom:3rem;
     }
     /* FAQ Section ==>START */
+    /* Blog Section ==>START */
+    .blog-section{
+        text-align: center;
+    }
+    .blog-items-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+    .blog__item{
+        width: 80%;
+    }
 
+    .blog__body a{
+        margin: 0 auto;
+    }
+    /* Blog Section ==>START */
 
 }
 
@@ -720,6 +772,10 @@ body{
     :root{
         font-size: 12px;
     } 
+    .white-arrow::after, .blue-arrow::after, .black-arrow::after, .yellow-arrow::after{
+        padding: 0 0.25rem;
+    }
+
     .hero-section__btns{
         flex-direction: column;
         align-items: center;
